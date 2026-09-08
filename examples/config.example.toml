@@ -1,0 +1,15 @@
+# Copy this file and supply your local node's actual port, wallet and cookie path.
+# Never place a password, seed, private key, or raw cookie in this file.
+[rpc]
+url = "http://127.0.0.1:18443"
+wallet = "flowmesh-regtest"
+cookie_file = "/REPLACE/WITH/YOUR/REGTEST/DATADIR/.cookie"
+expected_chain = "regtest"
+timeout = 5
+
+# Only numeric loopback HTTP endpoints are accepted (127.0.0.0/8 or [::1]).
+# Explicit ~ paths are expanded; relative cookie paths use this file's directory.
+# On POSIX, restrict cookie permissions to its owner (0600). Symlinks are rejected.
+# On Windows, separately restrict cookie access using the file's ACL.
+# Read-only connections may pin main, test, testnet4, signet, or regtest.
+# Writes additionally require explicit CLI authorization and synchronized regtest.
